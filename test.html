@@ -22,8 +22,10 @@
            justify-content: space-around;
         }
         .text-section{
-            width: 50%;
-
+            width: 40%;
+           display: flex;
+           flex-direction: column;
+           
         }
         .video{
             color:orange;
@@ -39,6 +41,31 @@
             padding: 10px 15px;
             border: none;
             border-radius: 5px;
+        }
+        .img-section{
+            width: 30%;
+            height: 400px;
+            box-shadow: 5px 0px 5px 0px #555;
+            border-radius: 5px;
+        }
+        .img-section img{
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width:500px) {
+            .row{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .img-section{
+                width: 100%;
+
+            }
+            .text-section{
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -59,7 +86,7 @@
 
             </div>
         </div>
-        <button class="btn">Learn more</button>
+        <button class="btn" >Learn more</button>
     </div>
 </body>
 </html>
